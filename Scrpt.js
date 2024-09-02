@@ -1,3 +1,33 @@
+// Topic -  Intro to Javascript
+function addNumbers(num1,num2){
+    return num1+num2;
+}
+console.log(addNumbers(1,2));
+console.log(addNumbers(1,"utkarsh")) // Output - 1utkarsh
+//* Sycnhronous Programming -  One by One task Execution
+//* A group of tasks is called thread
+
+// * Callback function -> A function passed into another function as argument
+function greeting(name,callback){
+    console.log('Hello ' + name + '!\n'); 
+    callback();
+}
+function goodbye(){
+    console.log('GoodBye! '); 
+}
+greeting('Roshan',goodbye)
+
+// Asych
+setTimeout(() => {
+    console.log('aye')
+}, 5000);
+
+// arrow functions
+const goofy = ()=>{
+console.log("scooby do")
+}
+goofy();
+
 console.log("hello world")
 //Topic - Javascipt and ES6  Date : 24-July-2024 
 let names = ['John','bob','Yatharth','Shivani ji','Syed'];
@@ -99,7 +129,7 @@ const bob = {
 const {f,s} = bob;
 console.log(f) //  undefined
 
-// bcox we have to destructure using keys only
+//! bcox we have to destructure using keys only
 // const {name} = bob;
 // name = firstname 
 
